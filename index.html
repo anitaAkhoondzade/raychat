@@ -16,9 +16,11 @@
   </head>
   <body>
     <main>
-
+    <!-- Header -->
+    <!-- Navigation -->
       <nav class="flex">
         <div class="buttons">
+          <!-- Profile -->
           <button class="btn nav-btn profile-btn open flex">
             <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
             <div class="btn-flex">
@@ -51,10 +53,11 @@
               </a></li>
             </ul>
           </div>
+          <!-- Notification -->
           <button class="btn nav-btn"> 
             <ion-icon class="icon" name="notifications-outline"></ion-icon>
-            
           </button>
+          <!-- Languages -->
           <button class="btn nav-btn language-btn open flex">
             <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
             <div class="btn-flex">
@@ -90,6 +93,8 @@
           </p>
         </div>
       </div>
+      <!-- Main section -->
+       <!-- Pakages -->
       <div class="panel">
         <h2 class="header-secondery">داشبورد</h2>
         <div class="pakage-container">
@@ -125,6 +130,7 @@
             
           </div>
         </div>
+        <!-- Statistics -->
           <div class="general-statistics">
             <h3 class="header-tertiary">آمار کلی:</h3>
             <div class="statistics">
@@ -150,6 +156,7 @@
               </div>
             </div>
           </div>
+          <!-- Chat diagram -->
           <div class="data-container">
             <div class="chat-box">
               <div class="chat-diagram">
@@ -188,18 +195,24 @@
          
       </div>
     </main>
+    <!-- Sidebar -->
+     <!-- Start Menu -->
     <aside>
       <div class="sticky">
         <div class="logo-container">
+          <!-- mobile menu close button -->
           <button class="mobile-close">
             <ion-icon class="icon icon-mobile-nav" name="close"></ion-icon>
           </button>
+          <!-- ////////////// -->
+          <!-- Logo -->
           <div>
             <a class="logo" href="#">
               <h1 class="header-primary">رایچت</h1>
               <ion-icon class="icon" name="chatboxes"></ion-icon>
             </a>
           </div>
+          <!-- ///////////// -->
         </div>
         <div class="open">
           <a class="web-container" href="#">
@@ -213,6 +226,7 @@
             </div> 
           </a>        
         </div>
+        <!-- Tab section for active and inactive buttons-->
         <div class="web-menu hidden">
           <div class="activator-btns">
             <button class="activator-btn activators__tab" data-tab="1">غیرفعال</button>
@@ -247,7 +261,9 @@
           </div>
         </div>
       </div>
+      <!-- ////////////////////////// -->
       <ul class="list">
+        <!-- General settings -->
         <li class="list-item">
           <div class="open">
             <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
@@ -294,6 +310,8 @@
             </ul>
           </div>
         </li>
+        <!-- ///////////////////////////////////// -->
+         <!-- Renewal and upgrade -->
         <li class="list-item">
           <div class="hidden open">
             <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
@@ -322,33 +340,35 @@
               </ul>
             </div>
         </li>
+        <!-- ///////////////////////////////////////// -->
+        <!-- Developers -->
         <li class="list-item">
           <div class="open">
-          <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
-          <p class="text">توسعه دهندگان</p>
-        </div>
-        <div class="hidden">
-            <ul class="list">
-              <li class="list-item--2">
-                <a href="#">
-                <p>لیست برنامه ها</p>
-                <ion-icon class="icon" name="settings"></ion-icon>
-                </a>
-              </li>
-              <li class="list-item--2">
-                <a href="#">
-                <p>وب هوک</p>
-                <ion-icon class="icon" name="settings"></ion-icon>
-                </a>
-              </li>
-              <li class="list-item--2">
-                <a href="#">
-                <p>APIs</p>
-                <ion-icon class="icon" name="settings"></ion-icon>
-                </a>
-              </li>
-            </ul>
+            <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
+            <p class="text">توسعه دهندگان</p>
           </div>
+          <div class="hidden">
+              <ul class="list">
+                <li class="list-item--2">
+                  <a href="#">
+                  <p>لیست برنامه ها</p>
+                  <ion-icon class="icon" name="settings"></ion-icon>
+                  </a>
+                </li>
+                <li class="list-item--2">
+                  <a href="#">
+                  <p>وب هوک</p>
+                  <ion-icon class="icon" name="settings"></ion-icon>
+                  </a>
+                </li>
+                <li class="list-item--2">
+                  <a href="#">
+                  <p>APIs</p>
+                  <ion-icon class="icon" name="settings"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
         </li>
       </ul>
       <div>
@@ -366,10 +386,15 @@
           </div>
         </a>
       </div>
+      <!-- End Menu -->
     </aside>
+    <!-- To cover the space behind the menu in mobile mode -->
     <div class="overlay hidden"></div>
-    <!-- <div class="buttom-space"></div> -->
+    <!-- ///////////////////////////////////////////////////// -->
+     
+     <!-- button for support with position: fixed -->
     <button class="btn-support"><ion-icon class="icon" name="chatboxes"></ion-icon></button>
+    <!-- ///////////////////////////////////////////// -->
     <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
     <script src="script.js"></script>

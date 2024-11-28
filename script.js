@@ -4,15 +4,10 @@ const menu = document.querySelector("aside");
 const mobileMenu = document.querySelector(".mobile-menu");
 const mobileClose = document.querySelector(".mobile-close");
 const overlay = document.querySelector(".overlay");
-// const tabs = document.querySelectorAll(".activators__tab");
-// const tabsContainer = document.querySelector(".activators__tab-container");
-// const tabsContent = document.querySelectorAll(".activators__content");
 
-// const popover = document.querySelectorAll(".popover");
-// const buttomSpace = document.querySelector(".buttom-space");
-// const tabs = document.querySelectorAll(".activator__tab");
-// const tabsContainer = document.querySelector(".activator__tab-container");
-// const tabsContent = document.querySelectorAll(".activator__content");
+////////////////////////////////////////////////////
+//  Opening and closing menus with arrow-down icon
+////////////////////////////////////////////////////
 
 open.forEach((i) => {
   i.addEventListener("click", () => {
@@ -24,13 +19,12 @@ open.forEach((i) => {
       i.firstElementChild.setAttribute("name", "arrow-dropdown");
       goal.classList.add("hidden");
     }
-
-    // buttomSpace.addEventListener("click", () => {
-    //   i.firstElementChild.setAttribute("name", "arrow-dropdown");
-    //   goal.classList.add("hidden");
-    // });
   });
 });
+
+///////////////////////////////
+// responsive menu for max-width: 65rem
+///////////////////////////////
 
 mobileMenu.addEventListener("click", () => {
   menu.style.display = "block";
@@ -44,11 +38,17 @@ mobileClose.addEventListener("click", () => {
   document.body.style.overflow = "scroll";
 });
 
+// The dark cover that is placed behind it when the menu is opened
+
 overlay.addEventListener("click", () => {
   menu.style.display = "none";
   overlay.classList.add("hidden");
   document.body.style.overflow = "scroll";
 });
+
+/////////////////////////////////////////
+//  Remove mobile menu for width > 65rem
+/////////////////////////////////////////
 
 window.addEventListener("resize", () => {
   const width = window.innerWidth;
@@ -64,24 +64,3 @@ window.addEventListener("resize", () => {
     overlay.classList.add("hidden");
   }
 });
-
-// tabsContainer.addEventListener("click", function (e) {
-//   const clicked = e.target.closest(".activators__tab");
-
-//   // Guard Clause
-//   if (!clicked) return;
-
-//   // // Remove Active Classes
-//   // tabs.forEach((t) => t.classList.remove("activators__tab--active"));
-//   tabsContent.forEach((c) => c.classList.remove("activators__content--active"));
-
-//   // Active Tab
-
-//   // clicked.classList.add("activators__tab--active");
-
-//   // Activate Content Area
-
-//   document
-//     .querySelector(`.activators__content--${clicked.dataset.tab}`)
-//     .classList.add("activators__content--active");
-// });
