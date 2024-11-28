@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>raychat</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Vazirmatn:wght@100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="query.css" />
+    
+  </head>
+  <body>
+    <main>
+
+      <nav class="flex">
+        <div class="buttons">
+          <button class="btn nav-btn profile-btn open flex">
+            <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
+            <div class="btn-flex">
+              <p>پروفایل کاربری</p>
+              <ion-icon name="person"></ion-icon>
+            </div>
+          </button>
+          <div class="profile popover hidden">
+            <ul class="list">
+              <li>
+                  <p>نام</p>
+                  <p>ایمیل</p>
+              </li>
+              <li>
+                <p>نوع پکیج: آزمایشی</p>
+                <p>مکالمه باقی مانده: 9999999999 عدد</p>
+                <p>روز باقی مانده: 14 روز</p>
+              </li>
+              <li><a href="#">
+                <a href="#">تمدید یا ارتقا پکیج</a>
+                <a href="#">خرید شارژ مکالمه</a>
+                <a href="#">لیست صورتحساب</a>
+              </a></li>
+              <li><a href="#">
+                پروفایل کاربری</a>
+                <a href="#">تکمیل اطلاعات</a>
+              </li>
+              <li><a href="#">
+                خروج
+              </a></li>
+            </ul>
+          </div>
+          <button class="btn nav-btn"> 
+            <ion-icon class="icon" name="notifications-outline"></ion-icon>
+            
+          </button>
+          <button class="btn nav-btn language-btn open flex">
+            <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
+            <div class="btn-flex">
+              <p>فارسی</p>
+              <ion-icon name="globe"></ion-icon>
+            </div>
+          </button>
+          <div class="popover hidden">
+            <ul class="list languages">
+              <li><a href="#">فارسی</a></li>
+              <li><a href="#">انگلیسی</a></li>
+            </ul>
+          </div>
+        </div>
+        <p class="news">
+          رایچت آپدیت شد!🥳از طریق <a href="#"> لینک </a>می تونید آخرین بروز رسانی
+          ها ی ما را دنبال کنید.
+        </p>
+        <button class="mobile-menu">
+          <ion-icon class="icon icon-mobile-nav" name="menu"></ion-icon>   
+        </button>
+      </nav>
+      <div class="wellcome flex">
+        <a class="panel-link" href="#">
+          <p>راهنمای داشبورد</p>
+          <ion-icon class="icon icon-purple" name="help-circle-outline"></ion-icon>
+        </a>
+        <div class="wellcome-text">
+          <h2 class="header-tertiary">خوش آمدید</h2>
+          <p class="text">
+            امیدواریم بتوانیم افتخار خدمت رسانی برای شما کاربر عزیز را داشته
+            باشیم.
+          </p>
+        </div>
+      </div>
+      <div class="panel">
+        <h2 class="header-secondery">داشبورد</h2>
+        <div class="pakage-container">
+          <div class="pakage-features">
+            <div class="feature remain-charge">
+              <div class="amount"> 
+                <span>2k</span> <span>پیام</span>
+              </div>
+              <div>
+                <p class="text-item"">شارژ باقی مانده</p>
+              </div>
+            </div>
+            <div class="feature service">
+              <div class="amount">
+                <span>14</span> <span>روز</span>
+              </div>
+              <div class="service-extension">
+                <p class="text-item">سرویس باقی مانده</p>
+                <button class="btn">تمدید سرویس</button>
+              </div>
+            </div>
+          </div>
+          <div class="pakage-type">
+            
+              <h3 class="header-tertiary">نوع پکیج شما:</h3>
+              <div class="pakage">
+                <div class="pakage-text">
+                  <p>آزمایشی</p>
+                  <p>پکیج آزمایشی رایچت</p>
+                </div>
+                <ion-icon class="icon" name="briefcase"></ion-icon>
+              </div>
+            
+          </div>
+        </div>
+          <div class="general-statistics">
+            <h3 class="header-tertiary">آمار کلی:</h3>
+            <div class="statistics">
+              <div class="item">
+                <ion-icon class="icon" name="easel"></ion-icon>
+                <p class="text-item">تعداد وبسایت ها</p>
+                <span class="number">0</span>
+              </div>
+              <div class="item">
+                <ion-icon class="icon" name="easel"></ion-icon>
+                <p class="text-item">تعداد کل کاربران</p>
+                <span class="number">0</span>
+              </div>
+              <div class="item">
+                <ion-icon class="icon" name="easel"></ion-icon>
+                <p class="text-item">تعداد همه مکالمات</p>
+                <span class="number">0</span>
+              </div>
+              <div class="item">
+                <ion-icon class="icon" name="easel"></ion-icon>
+                <p class="text-item">تعداد اپراتور ها</p>
+                <span class="number">0</span>
+              </div>
+            </div>
+          </div>
+          <div class="data-container">
+            <div class="chat-box">
+              <div class="chat-diagram">
+                <p class="text">فعلا دیتایی ثبت نشده است. با اولین مکالمه تان، نمودار چت ها را مشاهده خواهید کرد</p>
+              </div>
+              <div class="users">
+                <div>
+                  <ion-icon class="icon icon-purple" name="logo-chrome"></ion-icon>
+                  Chrome users: 0
+                </div>
+                <div>
+                  <ion-icon class="icon icon-purple" name="logo-chrome"></ion-icon>
+                  Safari users: 0
+                </div>
+                <div>
+                  <ion-icon class="icon icon-purple" name="logo-chrome"></ion-icon>
+                  Firefox users: 0
+                </div>
+              </div>           
+            </div>
+            <div class="chat-container">
+                <div class="data">
+                  <h3 class="header-tertiary">تعداد مکالمات</h3>
+                  <p>0</p>
+                </div>
+                <div class="data">
+                  <h3 class="header-tertiary">تعداد کاربران</h3>
+                  <p>0</p>
+                </div>
+                <div class="data">
+                  <h3 class="header-tertiary">نرخ تبدیل به مکالمه</h3>
+                  <p>0.0%</p>
+                </div>
+            </div>
+          </div>
+         
+      </div>
+    </main>
+    <aside>
+      <div class="sticky">
+        <div class="logo-container">
+          <button class="mobile-close">
+            <ion-icon class="icon icon-mobile-nav" name="close"></ion-icon>
+          </button>
+          <div>
+            <a class="logo" href="#">
+              <h1 class="header-primary">رایچت</h1>
+              <ion-icon class="icon" name="chatboxes"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="open">
+          <a class="web-container" href="#">
+            <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
+            <div class="web">
+              <div class="web-name">
+                <h4>وبسایت</h4>
+                <p>memarat</p>
+              </div>         
+                <ion-icon class="icon icon-web" name="briefcase"></ion-icon>
+            </div> 
+          </a>        
+        </div>
+        <div class="web-menu hidden">
+          <div class="activator-btns">
+            <button class="activator-btn activators__tab" data-tab="1">غیرفعال</button>
+            <button class="activator-btn activators__tab" data-tab="2">فعال</button>
+          </div>
+          <div class="activators__tab-container">
+            <div class="tab--1 activators__content activators__content--1 .activators__content--active">
+               
+              <div>
+                <a class="web web-link" href="#">
+                  <p>memarat</p>
+                  <ion-icon class="icon icon-web icon-menu" name="briefcase"></ion-icon>
+                </a>
+              </div>
+              <div>
+                <button class="web-btn show-web-btn">نمایش همه وبسایت ها</button>
+                <button class="web-btn add-web-btn">
+                  <p>افزودن وبسایت</p>
+                  <ion-icon class="icon icon-menu" name="add-circle-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+            <div class="tab--2 activators__content activators__content--2">
+              <div>
+                <button class="web-btn show-web-btn">نمایش همه وبسایت ها</button>
+                <button class="web-btn add-web-btn">
+                  <p>افزودن وبسایت</p>
+                  <ion-icon class="icon icon-menu" name="add-circle-outline"></ion-icon>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <ul class="list">
+        <li class="list-item">
+          <div class="open">
+            <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
+            <p class="text">تنظیمات عمومی</p>
+          </div>
+          <div>
+            <ul class="list">
+              <li class="list-item--2">
+                <a href="#">
+                <p>داشبورد</p>
+                <ion-icon class="icon" name="settings"></ion-icon>
+                </a>
+              </li>
+              <li class="list-item--2">
+                <a href="#">
+                <p>تنظیمات ابزارک</p>
+                <ion-icon class="icon" name="settings"></ion-icon>
+                </a>
+              </li>
+              <li class="list-item--2">
+                <a href="#">
+                <p>آمار</p>
+                <ion-icon class="icon" name="settings"></ion-icon>
+                </a>
+              </li>
+              <li class="list-item--2">
+                <a href="#">
+                <p>اپراتور ها</p>
+                <ion-icon class="icon" name="settings"></ion-icon>
+                </a>
+              </li>
+              <li class="list-item--2">
+                <a href="#">
+                <p>پنل گفتگو</p>
+                <ion-icon class="icon" name="settings"></ion-icon>
+                </a>
+              </li>
+              <li class="list-item--2">
+                <a href="#">
+                <p>لیست سیاه</p>
+                <ion-icon class="icon" name="settings"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="hidden open">
+            <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
+            <p class="text">تمدید و ارتقا</p>
+          </div>
+          <div class="hidden">
+              <ul class="list">
+                <li class="list-item--2">
+                  <a href="#">
+                  <p>تمدید و ارتقا</p>
+                  <ion-icon class="icon" name="settings"></ion-icon>
+                  </a>
+                </li>
+                <li class="list-item--2">
+                  <a href="#">
+                  <p>شارژ مکالمه</p>
+                  <ion-icon class="icon" name="settings"></ion-icon>
+                  </a>
+                </li>
+                <li class="list-item--2">
+                  <a href="#">
+                  <p>لیست صورتحساب</p>
+                  <ion-icon class="icon" name="settings"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </li>
+        <li class="list-item">
+          <div class="open">
+          <ion-icon class="icon icon-arrow-down" name="arrow-dropdown"></ion-icon>
+          <p class="text">توسعه دهندگان</p>
+        </div>
+        <div class="hidden">
+            <ul class="list">
+              <li class="list-item--2">
+                <a href="#">
+                <p>لیست برنامه ها</p>
+                <ion-icon class="icon" name="settings"></ion-icon>
+                </a>
+              </li>
+              <li class="list-item--2">
+                <a href="#">
+                <p>وب هوک</p>
+                <ion-icon class="icon" name="settings"></ion-icon>
+                </a>
+              </li>
+              <li class="list-item--2">
+                <a href="#">
+                <p>APIs</p>
+                <ion-icon class="icon" name="settings"></ion-icon>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <div>
+        <a class="ai-bot" href="#">
+          <p>ربات پاسخگو</p>
+          <ion-icon class="icon" name="logo-reddit"></ion-icon>
+        </a>
+      </div>
+      <div>
+        <a class="ai-chat-box" href="#">
+          <img src="images/AI.jpeg" alt="AI">
+          <div class="ai-text">
+            <ion-icon class="icon" name="arrow-back"></ion-icon>
+            <p>چت بات هوش مصنوعی</p>
+          </div>
+        </a>
+      </div>
+    </aside>
+    <div class="overlay hidden"></div>
+    <!-- <div class="buttom-space"></div> -->
+    <button class="btn-support"><ion-icon class="icon" name="chatboxes"></ion-icon></button>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
